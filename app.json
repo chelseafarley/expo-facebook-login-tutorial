@@ -15,9 +15,11 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.misscoding.facebooklogin",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.misscoding.facebooklogin",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -25,6 +27,27 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d25a6d12-94d8-41af-943d-083fc47af0b6"
+      }
+    },
+    "plugins": [
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "651188800338806",
+          "clientToken": "3c38420d66a0c30403b1e367f148c9a3",
+          "displayName": "Login Tutorial",
+          "scheme": "fb651188800338806",
+          "advertiserIDCollectionEnabled": false,
+          "autoLogAppEventsEnabled": false,
+          "isAutoInitEnabled": true,
+          "iosUserTrackingPermission": "This identifier will be used to deliver personalized ads to you."
+        }
+      ],
+      "expo-tracking-transparency"
+    ]
   }
 }
